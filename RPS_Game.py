@@ -20,7 +20,7 @@ def play():
     while player_score < 3 and bot_score < 3:
         ls = ('rock', 'paper', 'scissors')
         bot = random.choice(ls)
-        player = input("Enter your choice (rock / paper / scissors): \n")
+        player = input("Enter your choice (rock / paper / scissors): \n").lower()
 
         #Draw
         if bot == player:
